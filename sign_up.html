@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sign up</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<h1>Bit Academy Sign Up:</h1>
+<label for="name">Naam:</label>
+<input type="text" id="name" name="name" required
+       minlength="4" maxlength="25px" size="10">
+<label for="email">Email:</label>
+<input type="email" id="email"
+       pattern=".+@globex.com" size="30" required>
+<label for="phone">Telefoonnummer:</label>
+
+<input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required>
+
+<small>Format: 06.....</small>
+<div><label for="pass">Pincode (4 characters max.):</label>
+    <input type="password" id="pass" name="password"
+           maxlength="4" required> 
+       </div>
+       <div class="form-example">
+<input type="submit" value="Versturen">
+</div>
+</body>
+</html>
